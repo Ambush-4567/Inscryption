@@ -1,0 +1,270 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+
+body
+{
+    background-color: black;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: grey;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adjust {
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    text-shadow: 1px 1px 2px black;
+}
+
+.boxed
+{
+    width: 100px;
+}
+
+.border
+{
+    border: 3px solid blue;
+}
+
+.regular
+{
+    text-align: center;
+    line-height: 0.8;
+    color: white;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.blue
+{
+    color: blue;
+}
+
+.img {
+    cursor: pointer;
+}
+
+#top
+{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 5px;
+    line-height: 0.6;
+}
+.translate
+{
+    transform: translateY(-110px);
+}
+
+.large
+{
+    width: 100px;
+    height: 70px;
+    border: 3px solid blue;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 17px;
+    background-color: rgb(186, 186, 186);
+}
+
+.spaced
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    cursor: pointer;
+}
+
+.leftilt:hover
+{
+    transform: rotate(-5deg);
+    animation-duration: 0.3s;
+    animation-name: left;
+}
+
+@keyframes left
+{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-5deg);}
+}
+
+.rightilt:hover
+{
+    transform: rotate(5deg);
+    animation-duration: 0.3s;
+    animation-name: right;
+}
+
+@keyframes right
+{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(5deg);}
+}
+
+.linedup
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle
+{
+    text-align: center;
+}
+
+.further
+{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.radius
+{
+    border-radius: 20px;
+}
+
+.topPadding
+{
+    padding-top: 10px;
+}
+
+.golden
+{
+  color: gold;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.leftd
+{
+    display: inline-block;
+}
+
+.rightd
+{
+    display: inline-block;
+    transform: translateY(-260px);
+    color: #fff;
+    text-shadow: 3px 3px 3px gray;
+}
+
+.alert
+{
+    color: red;
+    font-weight: bold;
+}
+
+.under
+{
+    width: 552px;
+    text-align: center;
+    margin-top: -38px;
+}
+
+.under2
+{
+    width: 552px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+figure
+{
+    display: inline-block;
+}
+
+.spaced2
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    cursor: pointer;
+}
+
+figcaption
+{
+    color: gold;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.bLeft
+{
+    bottom: 0px;
+    left: 0px;
+    position: fixed;
+}
+
+.apart
+{
+    left: 125px;
+    bottom: 0px;
+    position: fixed;
+    margin-bottom: 20px;
+    font-size: 140%;
+}
+
+.altfont
+{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal; 
+}
+
+.furder
+{
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+}
+
+#topLeft
+{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 5px;
+    line-height: 0.6;
+    text-align: center;
+}
+
+.large2
+{
+    width: 105px;
+    height: 35px;
+    border: 3px solid blue;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: rgb(186, 186, 186);
+    font-weight: bold;
+    border-radius: 15px;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="startUp()">
+
+<div id="top">
+    <p class="golden">Gold:&nbsp;<span id="goldCount">0</span></p>
+    <u>Total Cards:&nbsp;<span id='cardcount'>0</u></span>
+    <p id="cust"></p>
+    <p id="adder1"></p>
+    <p id="cat1"></p>
+    <p id="wolf1"></p>
+    <p id="stoat1"></p>
+    <p id="ratking1"></p>
+    <p id="rattler1"></p>
+    <p id="cockroach1"></p>
+    <p id="coyote1"></p>
+    <p id="bee1"></p>
+    <p id="bat1"></p>
+    <p id="grizzly1"></p>
+    <p id="opossum1"></p>
+    <p id="raven1"></p>
+    <p id="riversnapper1"></p>
+    <p id="theSmoke1"></p>
+    <p id="blackGoat1"></p>
+    <p id="elk1"></p>
+    <p id="sparrow1"></p>
+    <p id="greaterSmoke1"></p>
+    <p id="mothman1"></p>
+    <p id="undeadcat1"></p>
+    <p id="cagedwolf1"></p>
+    <p id="geck1"></p>
+    <p id="squirrel5"></p>
+    
+</div>
+
+<section id="hide1">
+    <input type="button" id="butt1" value="Continue" class="large" onclick="scene2()">
+</section>
+
+<section id="hide2">
+    <div class="regular">
+    <h1>Choose Your Path:</h1>
+    <p>From left to right: Battle section, Campfire, Look at your deck, Select starter cards, get 1 rare card, instructions and info.</p>
+    <p>Start by clicking deck creator and rare cards, then get going on your journey.</p>
+    <p class="alert" id="alert"></p>
+    <img src="Images/battle.png" onclick="battle()" class="leftilt spaced">
+    <img src="Images/boulder.png" onclick="scene4()" id="bigBould" class="rightilt spaced">
+    <img src="Images/deck.png" onclick="scene5()" class="leftilt spaced"><br>
+    <img src="Images/deckcreator.png" onclick="scene6()" class="leftilt spaced">
+    <img src="Images/rarecards.png" onclick="scene7()" class="rightilt spaced">
+    <img src="Images/shop.png" onclick="scene8()" class="leftilt spaced">
+    <p id="array">???</p>
+    </div>
+</section>
+
+<section id="hide3">
+    <!--Battle-->
+</section>
+
+<section id="hide4">
+    <div class="regular">
+    <h2>Mysteroius Boulders</h2>
+    <p>The prospector reveals himslef, and utters in a scratchy voice: "Pick one of them stones, and gain a chance to get sum riches. I'll strike it with me pick".</p>
+    <p>For now, this event will not reappear after being done once.</p>
+    <img src="Images/boulder.png" onclick="bouldRng()" class="leftilt spaced" id="b1">
+    <img src="Images/boulder.png" onclick="bouldRng()" class="leftilt spaced" id="b2">
+    <img src="Images/boulder.png" onclick="bouldRng()" class="leftilt spaced" id="b3">
+    <img src='' class="leftilt spaced" id="b4">
+    <p id="below" class="blue">Pick one.</p>
+    <input type="button" id="butt1" value="Leave" class="large further" onclick="scene2()">
+    </div>
+</section>
+
+<section id="hide5">
+    <div id="remove">
+    <img id="spot1"></img>
+    <img id="spot2"></img>
+    <img id="spot3"></img>
+    <img id="spot4"></img>
+    <img id="spot5"></img>
+    <img id="spot6"></img>
+    <img id="spot7"></img>
+    <img id="spot8"></img>
+    <img id="spot9"></img>
+    <img id="spot10"></img>
+    <img id="spot11"></img>
+    <img id="spot12"></img>
+    <img id="spot13"></img>
+    <img id="spot14"></img>
+    <img id="spot15"></img>
+    <img id="spot16"></img>
+    <img id="spot17"></img>
+    <img id="spot18"></img>
+    <img id="spot19"></img>
+    <img id="spot20"></img>
+    </div>
+    <input type="button" id="butt1" value="Leave" class="large further" onclick="scene2()">
+</section>
+
+<section id="hide6">
+    <div class="leftd">
+    <img src="Images/adder.png" id="adder" class="img" onclick="adderAdd()">
+    <img src="Images/cat.png" id="cat"  class="img" onclick="catAdd()">
+    <img src="Images/wolf.png" id="wolf" class="img" onclick="wolfAdd()">
+    <img src="Images/stoat.png" id="stoat" class="img" onclick="stoatAdd()"><br>
+    <img src="Images/rat-king.png" id="ratking" class="img" onclick="ratkingAdd()">
+    <img src="Images/rattler.png" id="rattler" class="img" onclick="rattlerAdd()">
+    <img src="Images/cockroach.png" id="cockroach" class="img" onclick="cockAdd()">
+    <img src="Images/coyote.png" id="coyote" class="img" onclick="coyoteAdd()"><br>
+</div>
+<div class="rightd">
+    <p>1. Hover over each card to read their description, if desired.</p>
+    <p>2. Choose 4 starter cards to add to your deck. You won't be able to re-choose.</p>
+    <p>3. Click on the squirrel to add 5 to your deck. This will make up your side deck.</p>
+    <p>4. Press continue, and don't forget to pick a rare scrybe if you haven't already.</p>
+    <p>5. Forget about OLD_DATA.</p>
+</div>
+    <div class="under">
+    <br><span class="bold blue" id="paragraph"></span><br>
+    </div>
+    <div class="under2">
+    <img src="Images/squirrel.png" class="img" id="squirrel" onclick="squirrelAdd()">
+    </div>
+    <input type="button" class="large further" id="butt5" onclick="scene2()" value="Continue">
+</section>
+
+<section id="hide7">
+    <div class="card-container">
+        <img src="Images/kaycee.png" class="leftilt spaced" id="01" onclick="kayceeAdd()">
+        <img src="Images/leshy.png" class="rightilt spaced" id="02" onclick="leshyAdd()">
+        <img src="Images/grimora.png" class="leftilt spaced" id="03" onclick="grimoraAdd()">
+        <img src="Images/magnificus.png" class="rightilt spaced" id="04" onclick="magnificusAdd()">
+        <img src="Images/p03.png" class="leftilt spaced" id="05" onclick="p03Add()">
+    </div>
+<div class="middle">
+<h2>Welcome to Inscryption, if it had a $1.99 budget.</h2>
+<h3>Choose 1 card out of the options above by clicking on it, it will be added to your deck. You won't be able to choose again.</h3>
+<p>Leshy has sharp quills. This means he will deal 1 damage to the attacker when struck.</p>
+<p>Grimora has bone king. This means she will drop 4 bones once she perishes.</p>
+<p>Magnificus has touch of death. This means whoever he strikes will perish guaranteed.</p>
+<p>P03 has many lives. This means he will not perish when sacrificed</p>
+<input type="button" id="butt2" value="Continue" class="large" onclick="scene2()">
+</div>
+</section>
+
+<section id="hide8">
+    <div id="topLeft">
+        <p><u>Options:</u></p>
+        <p class="golden">Costs $3</p>
+        <input type="button" value="Reroll Shop" onclick="rerollConf()" class="large2">
+
+    </div>
+    <div class="regular">
+    <h2>Shop Section</h2>
+    <p>Shop items are exclusive, holding 1 rare per time and 4 commons available. $20 for commons and $50 for rares.</p>
+    <p id="sAlert" class="alert"></p>
+    <section class="altfont">
+    <figure><img src="Images/blank.png" class="spaced2 leftilt" id="shop1"><figcaption>$12 SALE</figcaption></figure>
+    <figure><img src="Images/blank.png" class="spaced2 rightilt" id="shop2"><figcaption>$50 RARE</figcaption></figure>
+    <figure><img src="Images/blank.png" class="spaced2 leftilt" id="shop3"><figcaption>$20</figcaption></figure><br>
+    <figure><img src="Images/blank.png" class="spaced2 leftilt" id="shop4"><figcaption>$20</figcaption></figure>
+    <figure><img src="Images/blank.png" class="spaced2 rightilt" id="shop5"><figcaption>$20</figcaption></figure>
+    </section>
+    </div>
+    <img src="Images/goldicon.png" class="bLeft">
+    <span class="apart golden" id="goldIcon"></span>
+    <input type="button" id="butt2" value="Leave" class="large further" onclick="scene2()">
+</section>
+<script src="main.js"></script>
+</body>
+</html>
